@@ -1,0 +1,125 @@
+
+@import url(menu.css);
+@import url(emcpag.css);
+@import url(piepag.css);
+@import url(galerias.css);
+@import url(fondocateg.css);
+@import url(contactos.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+}
+
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+.titulos{
+    color: rgb(43, 255, 0);
+    font-size: 50px;
+    padding: 10px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-align: center;
+}
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;   
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contenedor .card{
+    width: 400px;
+    height: 390px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 5px;
+    text-align: justify;
+    transition: all 0.25s;
+}
+
+.contenedor .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.contenedor .card img{
+    width: 400px;
+    height: 220px;
+
+}
+.contenedor .card h4{
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+}
+.contenedor .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contenedor .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+@media (min-width:768px){
+     .sociales{
+         width: auto;
+     }
+}
+
+@media (min-width:1024px){
+    .contenedor {
+        width: 1000px;
+    }
+}

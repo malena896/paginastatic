@@ -1,0 +1,35 @@
+#piepag {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#piepag .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-marca {
+    margin: 20px;
+}
+
+.info-marca img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+
+@media (min-width:480px){
+    .info-marca {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px){
+    .info-marca {
+        width: auto;
+    }
+}
